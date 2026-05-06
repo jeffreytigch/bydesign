@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+<title>by design</title>
+
+<meta name="description" content="Vulnerabilities Microsoft Security Response Center deems &#34;by design&#34; or not important enough." />
+ 
+<meta name="author" content="Jeffrey Tigch" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto+Slab|Hind+Vadodara:400,600"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<meta property="og:title" content="by design" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="img/og-image.jpg" />
+
+  </head>
+  <body>
+    
+    <header class="page-header">
+      
+      <p>
+         By Design 
+      </p>
+
+      <p></p>
+    </header>
+
+    
+    <section>
+      <div class="timeline-filter-wrapper">
+        <header class="timeline-filter">
+          <ul>
+            <li>
+              <input type="checkbox" name="filter-shortcut" id="all" checked />
+              <label for="all">All</label>
+            </li>
+            
+            <li>
+              <input type="checkbox" name="filter" id="msrc" checked />
+              <label for="msrc">Msrc </label>
+            </li>
+            
+            <li>
+              <input type="checkbox" name="filter" id="security" checked />
+              <label for="security">Security </label>
+            </li>
+            
+          </ul>
+        </header>
+      </div>
+      <article class="timeline">
+        
+        <div
+          class="timeline-entry"
+          data-category="security,msrc"
+          aria-hidden="false"
+        >
+          <div class="timeline-icon red" title="shield-alt">
+            
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            
+          </div>
+          <div class="timeline-description">
+            <span class="timestamp"
+              ><time datetime="2026-05-01 00:00"
+                >May 1, 2026 12:00 AM</time
+              ></span
+            >
+            <h2>
+              <a id="msrc-2026-001" href="#msrc-2026-001"><i class="fas fa-link"></i></a>Windows TCP/IP Remote Code Execution — "Not Exploitable"
+            </h2>
+             
+            <p>
+               Microsoft classified a remote code execution vulnerability in Windows TCP/IP stack as "not exploitable" in normal scenarios. The vulnerability requires specific network conditions that MSRC deemed "extremely unlikely" in production environments. Security researchers argued the attack surface was broader than acknowledged. 
+            </p>
+             
+            <ul>
+              
+              <li>
+                <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-30001" target="_blank">CVE Details</a>MSRC security update guide
+                
+                  <span class="linkMirrors">
+                      (<a href="https://web.archive.org/web/*/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-30001" target="_blank">Wayback</a>)
+                      (<a href="https://archive.is/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-30001" target="_blank">Archive.is</a>)
+                  </span>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+        <div
+          class="timeline-entry"
+          data-category="security,msrc"
+          aria-hidden="false"
+        >
+          <div class="timeline-icon red" title="bug">
+            
+            <i class="fas fa-bug" aria-hidden="true"></i>
+            
+          </div>
+          <div class="timeline-description">
+            <span class="timestamp"
+              ><time datetime="2026-04-15 00:00"
+                >April 15, 2026 12:00 AM</time
+              ></span
+            >
+            <h2>
+              <a id="msrc-2026-002" href="#msrc-2026-002"><i class="fas fa-link"></i></a>SharePoint Server Spoofing — "By Design"
+            </h2>
+             
+            <p>
+               A spoofing vulnerability in Microsoft SharePoint Server was marked as "by design" — meaning the behavior is intentional and will not be patched. The vulnerability allows attackers to impersonate legitimate SharePoint services, potentially leading to credential theft or phishing attacks. 
+            </p>
+             
+            <ul>
+              
+              <li>
+                <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32201" target="_blank">CVE Details</a>MSRC security update guide
+                
+                  <span class="linkMirrors">
+                      (<a href="https://web.archive.org/web/*/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32201" target="_blank">Wayback</a>)
+                      (<a href="https://archive.is/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-32201" target="_blank">Archive.is</a>)
+                  </span>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+        <div
+          class="timeline-entry"
+          data-category="security,msrc"
+          aria-hidden="false"
+        >
+          <div class="timeline-icon red" title="lock">
+            
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            
+          </div>
+          <div class="timeline-description">
+            <span class="timestamp"
+              ><time datetime="2026-03-11 00:00"
+                >March 11, 2026 12:00 AM</time
+              ></span
+            >
+            <h2>
+              <a id="msrc-2026-003" href="#msrc-2026-003"><i class="fas fa-link"></i></a>SQL Server Privilege Escalation — "Won't Fix"
+            </h2>
+             
+            <p>
+               An improper access control vulnerability in SQL Server allows authorized low-privileged users to elevate privileges over the network, potentially gaining sysadmin access. Microsoft declined to patch, stating the vulnerability requires existing authentication and is "not a security boundary violation" in their threat model. 
+            </p>
+             
+            <ul>
+              
+              <li>
+                <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21262" target="_blank">CVE Details</a>MSRC security update guide
+                
+                  <span class="linkMirrors">
+                      (<a href="https://web.archive.org/web/*/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21262" target="_blank">Wayback</a>)
+                      (<a href="https://archive.is/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-21262" target="_blank">Archive.is</a>)
+                  </span>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+        <div
+          class="timeline-entry"
+          data-category="security,msrc"
+          aria-hidden="false"
+        >
+          <div class="timeline-icon red" title="exclamation-triangle">
+            
+            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+            
+          </div>
+          <div class="timeline-description">
+            <span class="timestamp"
+              ><time datetime="2026-02-11 00:00"
+                >February 11, 2026 12:00 AM</time
+              ></span
+            >
+            <h2>
+              <a id="msrc-2026-004" href="#msrc-2026-004"><i class="fas fa-link"></i></a>HTTP.sys Denial of Service — "Informational"
+            </h2>
+             
+            <p>
+               A denial-of-service vulnerability in HTTP.sys was classified as "informational" severity rather than a security update. While the bug can crash IIS and other network-facing Windows services, MSRC deemed it "not a security vulnerability" since it does not lead to code execution or privilege escalation. 
+            </p>
+             
+            <ul>
+              
+              <li>
+                <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33096" target="_blank">CVE Details</a>MSRC security update guide
+                
+                  <span class="linkMirrors">
+                      (<a href="https://web.archive.org/web/*/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33096" target="_blank">Wayback</a>)
+                      (<a href="https://archive.is/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33096" target="_blank">Archive.is</a>)
+                  </span>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+        <div
+          class="timeline-entry"
+          data-category="security,msrc"
+          aria-hidden="false"
+        >
+          <div class="timeline-icon red" title="windows">
+            
+            <i class="fas fa-windows" aria-hidden="true"></i>
+            
+          </div>
+          <div class="timeline-description">
+            <span class="timestamp"
+              ><time datetime="2026-01-14 00:00"
+                >January 14, 2026 12:00 AM</time
+              ></span
+            >
+            <h2>
+              <a id="msrc-2026-005" href="#msrc-2026-005"><i class="fas fa-link"></i></a>Windows Kerberos Privilege Escalation — "By Design"
+            </h2>
+             
+            <p>
+               A privilege escalation vulnerability in Windows Kerberos was marked as "by design." The issue relates to how Kerberos tickets are validated, allowing certain authenticated users to obtain elevated tickets. Microsoft's position: the attack requires domain-joined membership and valid credentials, placing it outside their security boundary. 
+            </p>
+             
+            <ul>
+              
+              <li>
+                <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20001" target="_blank">CVE Details</a>MSRC security update guide
+                
+                  <span class="linkMirrors">
+                      (<a href="https://web.archive.org/web/*/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20001" target="_blank">Wayback</a>)
+                      (<a href="https://archive.is/https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20001" target="_blank">Archive.is</a>)
+                  </span>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+      </article>
+    </section>
+    
+    <footer class="page-footer">
+      
+      <p>
+         Vulnerabilities Microsoft Security Response Center deems "by design" or not important enough. Sourced from MSRC advisories. 
+      </p>
+      
+      <p>
+        Built with Molly White's
+        <a href="https://github.com/molly/static-timeline-generator" target="_blank"
+          >static timeline generator</a
+        >.
+      </p>
+    </footer>
+    
+
+    <script src="js/classlist-polyfill.js"></script>
+    <script src="js/site-js.js"></script>
+  </body>
+</html>
