@@ -1,6 +1,6 @@
 // Header and footer
-const header = 'By Design';
-const footer = 'Vulnerabilities Microsoft Security Response Center deems "by design" or not important enough. Sourced from MSRC advisories.';
+export const header = 'By Design';
+export const footer = 'Vulnerabilities Microsoft Security Response Center deems "by design" or not important enough. Sourced from MSRC advisories.';
 
 // Timeline entries — add new ones at the top (most recent first)
 const entries = [
@@ -107,10 +107,10 @@ const entries = [
 ];
 
 // Page details
-const pageTitle = 'by design';
-const pageDescription = 'Vulnerabilities Microsoft Security Response Center deems "by design" or not important enough.';
-const pageAuthor = 'Jeffrey Tigch';
-const showMirrorLinks = true;
+export const pageTitle = 'by design';
+export const pageDescription = 'Vulnerabilities Microsoft Security Response Center deems "by design" or not important enough.';
+export const pageAuthor = 'Jeffrey Tigch';
+export const showMirrorLinks = true;
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
@@ -137,7 +137,7 @@ const addCategoriesStringsToEntries = (entries) => {
   return entries;
 };
 
-module.exports = {
+export default {
   header,
   footer,
   showMirrorLinks,

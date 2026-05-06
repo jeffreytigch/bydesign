@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <%- include('/head', {head: content.head}) %>
+    <%- include('/head', {head: timeline.head}) %>
   </head>
   <body>
-    <% if (content.header) { %>
+    <% if (timeline.header) { %>
     <header class="page-header">
-      <% if (!utilities.isWrappedInParagraphTags(content.header)) { %>
+      <% if (!utilities.isWrappedInParagraphTags(timeline.header)) { %>
       <p>
-        <% } %> <%- content.header %> <% if (!utilities.isWrappedInParagraphTags(content.header)) {
+        <% } %> <%- timeline.header %> <% if (!utilities.isWrappedInParagraphTags(timeline.header)) {
         %>
       </p>
 
@@ -24,7 +24,7 @@
               <input type="checkbox" name="filter-shortcut" id="all" checked />
               <label for="all">All</label>
             </li>
-            <% content.filters.forEach(function(filter){ %>
+            <% timeline.filters.forEach(function(filter){ %>
             <li>
               <input type="checkbox" name="filter" id="<%= filter %>" checked />
               <label for="<%= filter %>"><%- utilities.sentenceCase(filter) %> </label>
@@ -34,7 +34,7 @@
         </header>
       </div>
       <article class="timeline">
-        <% content.entries.forEach(function(entry){ %>
+        <% timeline.entries.forEach(function(entry){ %>
         <div
           class="timeline-entry"
           data-category="<%= entry.categoriesString %>"
@@ -75,7 +75,7 @@
               <li>
                 <a href="<%= link.href %>" target="_blank"><%- link.linkText %></a><%-
                 link.extraText %>
-                <% if (content.showMirrorLinks) { %>
+                <% if (timeline.showMirrorLinks) { %>
                   <span class="linkMirrors">
                       (<a href="https://web.archive.org/web/*/<%= link.href %>" target="_blank">Wayback</a>)
                       (<a href="https://archive.is/<%= link.href %>" target="_blank">Archive.is</a>)
@@ -90,11 +90,11 @@
         <% }); %>
       </article>
     </section>
-    <% if (content.footer) { %>
+    <% if (timeline.footer) { %>
     <footer class="page-footer">
-      <% if (!utilities.isWrappedInParagraphTags(content.footer)) { %>
+      <% if (!utilities.isWrappedInParagraphTags(timeline.footer)) { %>
       <p>
-        <% } %> <%- content.footer %> <% if (!utilities.isWrappedInParagraphTags(content.footer)) {
+        <% } %> <%- timeline.footer %> <% if (!utilities.isWrappedInParagraphTags(timeline.footer)) {
         %>
       </p>
       <% } %>

@@ -1,8 +1,8 @@
-const pluginSass = require('eleventy-sass');
-const postcss = require('postcss');
-const autoprefixer = require('autoprefixer');
+import pluginSass from 'eleventy-sass';
+import postcss from 'postcss';
+import autoprefixer from 'autoprefixer';
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSass, {
     postcss: postcss([autoprefixer]),
     input: './src/css/*.sass',
@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src',
+      output: '_site',
     },
   };
 };
